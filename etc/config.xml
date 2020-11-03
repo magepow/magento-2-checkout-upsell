@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magepow_displayupsell>
+            <general>
+                <enabled>1</enabled>
+                <title>Upsell Products</title>
+                <limit>10</limit>
+                <sku></sku>
+                <show_name>1</show_name>
+                <show_price>1</show_price>
+				<addtocart>1</addtocart>
+				<addtowishlist>1</addtowishlist>
+				<addtocompare>1</addtocompare>
+            </general>
+        </magepow_displayupsell>
+    </default>
+</config>

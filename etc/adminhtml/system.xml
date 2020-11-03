@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="magepow" translate="label" sortOrder="1">
+			<label>Magepow</label>
+		</tab>
+		<section id="magepow_displayupsell" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>Display Upsell</label>
+			<tab>magepow</tab>
+			<resource>Magepow_DisplayUpsell::display_upsell</resource>
+			<group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+				<label>General Settings</label>
+				<field id="enabled" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Enabled</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="title" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Title</label>
+					<comment><![CDATA[change title of products you want to show.]]></comment>
+				</field>
+				<field id="limit" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Max Items</label>
+					<comment><![CDATA[Number of products you want to display.]]></comment>
+				</field>
+				<field id="sku" translate="label comment" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>SKU</label>
+					<comment><![CDATA[Sku of products you want to show first all the time.]]></comment>
+				</field>
+				<field id="show_name" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+					<label>Product Name</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="show_price" translate="label comment" type="select" sortOrder="40"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Show Price:</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="addtocart" translate="label comment" type="select" sortOrder="50"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Show Add to cart:</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="addtowishlist" translate="label comment" type="select" sortOrder="60"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Show Add to Wishlist:</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>	
+                <field id="addtocompare" translate="label comment" type="select" sortOrder="65"  showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Show Add to Compare:</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+			</group>
+		</section>
+	</system>
+</config>
