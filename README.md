@@ -4,7 +4,6 @@ Before you continue, ensure you meet the following requirements:
 
   * You have installed magento2
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
-  Install magento2-instagram extension
 
 # Step 1 : Download Magento 2 Display-Upsell Extension
 
