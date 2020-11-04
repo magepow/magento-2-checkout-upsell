@@ -10,7 +10,7 @@ Before you continue, ensure you meet the following requirements:
  ## Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
 ```
-composer require Magepow/DisplayUpsell
+composer require magepow/displayupsell
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
