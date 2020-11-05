@@ -10,14 +10,17 @@ $price       = $helper->getConfigModule('general/show_price');
 $addtocart   = $helper->getConfigModule('general/addtocart');
 $addtowishlist   = $helper->getConfigModule('general/addtowishlist');
 $addtocompare    = $helper->getConfigModule('general/addtocompare');
-$sku        = $helper->getConfigModule('general/sku');
-$productSku = $objectManager->create('\Magento\Catalog\Model\ProductRepository')->get($sku);
-$skuId      = $productSku ->getId();
 $upsellProductItem  = $this->getUpsellProducts();
 $upsellProductItems = array_unique($upsellProductItem);
 $upSellProducts     = array_slice($upsellProductItems,0,$limit);
-array_unshift($upSellProducts,$skuId);
-$image              = 'new_products_content_widget_grid';
+$sku        = $helper->getConfigModule('general/sku');
+if (!empty($sku)) {       
+    $productSku = $objectManager->create('\Magento\Catalog\Model\ProductRepository')->get($sku);
+    $skuId      = $productSku ->getId();
+    array_unshift($upSellProducts,$skuId);
+           }
+        
+$image      = 'new_products_content_widget_grid';
  
 ?>
 <?php if ($upSellProducts && count($upSellProducts) > 0): ?>
@@ -141,4 +144,6 @@ $image              = 'new_products_content_widget_grid';
                 var productUpsell = $('.upsell-content .productUpsell');
                  if(productUpsell.length) $('head').append(magicproduct(productUpsell, '.item')); });
         </script>
+    <!--the end  -->
+    <!-- option enable and disable -->
     
