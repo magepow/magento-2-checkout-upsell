@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="checkout" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Magepow\DisplayUpsell\Block\Checkout\ProductUpsell" name="content.upsell" template="Magepow_DisplayUpsell::productupsell.phtml" before="checkout.root" cacheable="false"/>
+            <block class="Magepow\CheckoutUpsell\Block\Checkout\ProductUpsell" name="content.upsell" template="Magepow_CheckoutUpsell::productupsell.phtml" before="checkout.root" cacheable="false"/>
         </referenceContainer>
     </body>
 </page>

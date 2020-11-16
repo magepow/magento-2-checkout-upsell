@@ -6,6 +6,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Magepow_DisplayUpsell',
+    'Magepow_CheckoutUpsell',
     __DIR__
 );

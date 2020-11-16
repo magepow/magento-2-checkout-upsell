@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <magepow_displayupsell>
+        <magepow_checkoutupsell>
             <general>
                 <enabled>1</enabled>
                 <title>Upsell Products</title>
@@ -13,6 +13,6 @@
 				<addtowishlist>1</addtowishlist>
 				<addtocompare>1</addtocompare>
             </general>
-        </magepow_displayupsell>
+        </magepow_checkoutupsell>
     </default>
 </config>

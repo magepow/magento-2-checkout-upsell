@@ -1,6 +1,6 @@
 {
-  "name": "magepow/displayupsell",
-  "description": "Display Upsell for magento 2 show product up-sell you want in checkout page.",
+  "name": "magepow/checkoutupsell",
+  "description": "Checkout Upsell for magento 2 show product up-sell you want in checkout page.",
     "require": {
     "magepow/core": "^1.0.0"
   },
@@ -22,7 +22,7 @@
           "registration.php"
       ],
       "psr-4": {
-          "Magepow\\DisplayUpsell\\": ""
+          "Magepow\\CheckoutUpsell\\": ""
       }
   }
 }

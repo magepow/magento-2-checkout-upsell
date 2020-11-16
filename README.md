@@ -1,23 +1,23 @@
-# magento2-display-upsell
+# magento2-checkout-upsell
 
 Before you continue, ensure you meet the following requirements:
 
   * You have installed magento2
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
 
-# Step 1 : Download Magento 2 Display-Upsell Extension
+# Step 1 : Download Magento 2 Checkout-Upsell Extension
 
  ## Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
 ```
-composer require magepow/displayupsell
+composer require magepow/checkoutupsell
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
   ## Install manual
   
 * extract file from archive
-* deploy file into Magento2 folder `app/code/Magepow/DisplayUpsell`. Run following commands
+* deploy file into Magento2 folder `app/code/Magepow/CheckoutUpsell`. Run following commands
 
  ```
  php bin/magento setup:upgrade
@@ -29,15 +29,15 @@ php bin/magento setup:static-content:deploy -f
 
   ## 1. General configuration
 
-  Login to magento admin, choose `stores->configuration->magepow->Display Upsell`
+  Login to magento admin, choose `stores->configuration->magepow->Checkout Upsell`
   
-  ![Image of magento admin config](https://github.com/magepow-teams/Display-Upsell/blob/master/media/backend-config.png)
+  ![Image of magento admin config](https://github.com/magepow-teams/Checkout-Upsell/blob/master/media/backend-config.png)
 
   Select `yes` to enable the module
   
   ## 2. Details Configuration
   
-   In `stores->configuration->magepow->Display Upsell` we set: 
+   In `stores->configuration->magepow->Checkout Upsell` we set: 
    * Max Items : Number of products you want to display.
    * Title : change title of products you want to show.
    * SKU: Sku of products you want to show first all the time.
@@ -54,7 +54,7 @@ php bin/magento setup:static-content:deploy -f
    ```
   ## 3. Result
    add to cart product you want buy, go `Proceed To Checkout` show result slide upsell product be like under.
-   ![Image of magento store front](https://github.com/magepow-teams/Display-Upsell/blob/master/media/2020-10-31_16-45.png)
+   ![Image of magento store front](https://github.com/magepow-teams/Checkout-Upsell/blob/master/media/2020-10-31_16-45.png)
    
    
  ## Donation

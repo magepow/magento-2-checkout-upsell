@@ -1,5 +1,5 @@
 <?php
-namespace Magepow\DisplayUpsell\Block\Checkout;
+namespace Magepow\CheckoutUpsell\Block\Checkout;
 use Magento\Framework\View\Element\Template;
 use Psr\Log\LoggerInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;

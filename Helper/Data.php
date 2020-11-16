@@ -1,6 +1,6 @@
 <?php
 
-namespace Magepow\DisplayUpsell\Helper;
+namespace Magepow\CheckoutUpsell\Helper;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {

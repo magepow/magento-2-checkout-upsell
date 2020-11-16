@@ -1,5 +1,5 @@
 <?php
-$helper         = $this->helper('Magepow\DisplayUpsell\Helper\Data');
+$helper         = $this->helper('Magepow\CheckoutUpsell\Helper\Data');
 $isEnabled      = $helper->getConfigModule('general/enabled');
 if( !$isEnabled ) return;
 $objectManager      = \Magento\Framework\App\ObjectManager::getInstance();
@@ -10,10 +10,10 @@ $price       = $helper->getConfigModule('general/show_price');
 $addtocart   = $helper->getConfigModule('general/addtocart');
 $addtowishlist   = $helper->getConfigModule('general/addtowishlist');
 $addtocompare    = $helper->getConfigModule('general/addtocompare');
+$sku        = $helper->getConfigModule('general/sku');
 $upsellProductItem  = $this->getUpsellProducts();
 $upsellProductItems = array_unique($upsellProductItem);
 $upSellProducts     = array_slice($upsellProductItems,0,$limit);
-$sku        = $helper->getConfigModule('general/sku');
 if (!empty($sku)) {       
     $productSku = $objectManager->create('\Magento\Catalog\Model\ProductRepository')->get($sku);
     $skuId      = $productSku ->getId();
