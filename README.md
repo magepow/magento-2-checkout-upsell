@@ -31,7 +31,7 @@ php bin/magento setup:static-content:deploy -f
 
   Login to magento admin, choose `stores->configuration->magepow->Checkout Upsell`
   
-  ![Image of magento admin config](https://github.com/magepow-teams/Checkout-Upsell/blob/master/media/backend-config.png)
+  ![Image of magento admin config](https://github.com/magepow-teams/magento2-checkoutupsell/blob/master/media/backend-config.png)
 
   Select `yes` to enable the module
   
@@ -54,7 +54,7 @@ php bin/magento setup:static-content:deploy -f
    ```
   ## 3. Result
    add to cart product you want buy, go `Proceed To Checkout` show result slide upsell product be like under.
-   ![Image of magento store front](https://github.com/magepow-teams/Checkout-Upsell/blob/master/media/2020-10-31_16-45.png)
+   ![Image of magento store front](https://github.com/magepow-teams/magento2-checkoutupsell/blob/master/media/2020-10-31_16-45.png)
    
    
  ## Donation
