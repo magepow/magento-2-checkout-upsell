@@ -1,11 +1,11 @@
-# magento2-checkout-upsell
+# Magento 2 Checkout Upsell
 
 Before you continue, ensure you meet the following requirements:
 
   * You have installed magento2
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
 
-# Step 1 : Download Magento 2 Checkout-Upsell Extension
+## Step 1 : Download Magento 2 Checkout Upsell Extension
 
  ## Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
@@ -14,46 +14,36 @@ composer require magepow/checkoutupsell
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
-  ## Install manual
-  
-* extract file from archive
-* deploy file into Magento2 folder `app/code/Magepow/CheckoutUpsell`. Run following commands
 
- ```
- php bin/magento setup:upgrade
- php bin/magento setup:static-content:deploy -f
- php bin/magento cache:flush
- ```
+## Step 2: User guide
 
-# Step 2: User guide
+  ### 2.1. General configuration
 
-  ## 1. General configuration
-
-  Login to magento admin, choose `stores->configuration->magepow->Checkout Upsell`
+  `Login to Magento admin > Stores > Configuration > Magepow > Checkout Upsell`
   
   ![Image of magento admin config](https://github.com/magepow-teams/magento2-checkoutupsell/blob/master/media/backend-config.png)
 
   Select `yes` to enable the module
   
-  ## 2. Details Configuration
+  ### 2.2. Details Configuration
   
-   In `stores->configuration->magepow->Checkout Upsell` we set: 
-   * Max Items : Number of products you want to display.
-   * Title : change title of products you want to show.
-   * SKU: Sku of products you want to show first all the time.
-   * Product Name	 : Yes/No enable and disable the show name product.
-   * Show Price : Yes/No enable and disable the show price product.
-   * Show Add to cart : Yes/No enable and disable the show add to cart.
-   * Show Add to Wishlist : Yes/No enable and disable the show add to wishlist.
-   * Show Add to Compare : Yes/No enable and disable the show compare.
+   In `Stores > Configuration > Magepow > Checkout Upsell` we set: 
+   * **Max Items**: Number of products you want to display.
+   * **Title**: change title of products you want to show.
+   * **SKU**: Sku of products you want to show first all the time.
+   * **Product Name**: Yes/No enable and disable the show name product.
+   * **Show Price**: Yes/No enable and disable the show price product.
+   * **Show Add to cart**: Yes/No enable and disable the show add to cart.
+   * **Show Add to Wishlist**: Yes/No enable and disable the show add to wishlist.
+   * **Show Add to Compare**: Yes/No enable and disable the show compare.
    
    Run the following command:
    
    ```
    php bin/magento cache:clean
    ```
-  ## 3. Result
-   add to cart product you want buy, go `Proceed To Checkout` show result slide upsell product be like under.
+  ### 2.3. Result
+   Add to cart product you want buy, go `Proceed To Checkout` show result slide upsell product be like under.
    ![Image of magento store front](https://github.com/magepow-teams/magento2-checkoutupsell/blob/master/media/2020-10-31_16-45.png)
    
    
