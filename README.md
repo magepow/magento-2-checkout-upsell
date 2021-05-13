@@ -5,7 +5,11 @@ Before you continue, ensure you meet the following requirements:
   * You have installed magento2
   * You are using a Linux or Mac OS machine. Windows is not currently supported.
 
-## Step 1 : Download Magento 2 Checkout Upsell Extension
+[![Latest Stable Version](https://poser.pugx.org/magepow/checkoutupsell/v/stable)](https://packagist.org/packages/magepow/checkoutupsell)
+[![Total Downloads](https://poser.pugx.org/magepow/checkoutupsell/downloads)](https://packagist.org/packages/magepow/checkoutupsell)
+[![Daily Downloads](https://poser.pugx.org/magepow/checkoutupsell/d/daily)](https://packagist.org/packages/magepow/checkoutupsell)
+
+## 1. Download Magento 2 Checkout Upsell Extension
 
  ## Install via composer (recommend)
 Run the following commands in Magento 2 root folder:
@@ -15,7 +19,7 @@ php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
 
-## Step 2: User guide
+## 2. User guide
 
   ### 2.1. General configuration
 
